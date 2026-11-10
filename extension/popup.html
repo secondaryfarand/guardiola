@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>The Trust Trap Companion</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <i class="fa-solid fa-shield-halved" style="color: var(--accent-gold);"></i>
+      <h2>The Trust Trap</h2>
+    </div>
+    <p class="subtitle">Client Companion Inspector</p>
+
+    <div class="inputSection">
+      <input type="text" id="targetInput" placeholder="Tempel URL atau teks di sini...">
+      <button id="scanBtn">
+        <i class="fa-solid fa-radar"></i> Periksa Cepat
+      </button>
+    </div>
+
+    <div id="resultBox" class="resultBox hidden">
+      <div class="resultHeader">
+        <span id="riskBadge" class="badge">Safe</span>
+      </div>
+      <ul id="redFlagsList"></ul>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+.inspectorCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.headerTitle i {
+  color: var(--accent-gold);
+  font-size: 1.5rem;
+}
+
+.headerTitle h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.typeSelector {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.typeBtn {
+  flex: 1;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all var(--transition-speed);
+}
+
+.typeBtn.active {
+  background-color: var(--accent-green);
+  border-color: var(--accent-green);
+  color: var(--text-main);
+}
+
+.textarea {
+  width: 100%;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  resize: vertical;
+  outline: none;
+  transition: border-color var(--transition-speed);
+}
+
+.textarea:focus {
+  border-color: var(--accent-gold);
+}
+
+.errorAlert {
+  background-color: rgba(220, 38, 38, 0.2);
+  border: 1px solid var(--danger-red);
+  color: #f87171;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.submitBtn {
+  background-color: var(--accent-green);
+  color: var(--text-main);
+  border: none;
+  padding: 0.85rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: background-color var(--transition-speed);
+}
+
+.submitBtn:hover {
+  background-color: var(--accent-green-hover);
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.singleInput {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.singleInput:focus {
+  outline: none;
+  border-color: var(--accent-gold, #f1c40f);
+  box-shadow: 0 0 0 3px rgba(241, 196, 15, 0.15);
+}
+
+
+.dynamicUrlGroup {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  animation: fadeInDown 0.3s ease-in-out;
+}
+
+.dynamicLabel {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.extractedInput {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.extractedInput:focus {
+  outline: none;
+  border-color: var(--accent-gold, #f1c40f);
+  box-shadow: 0 0 0 3px rgba(241, 196, 15, 0.15);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.hintText {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 2px;
+}
+
+.ocrUploadContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ocrDropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.02);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+.ocrDropzone:hover {
+  border-color: var(--accent-gold, #f1c40f);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

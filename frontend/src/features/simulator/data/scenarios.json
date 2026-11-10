@@ -1,0 +1,44 @@
+[
+  {
+    "id": "scam-link-01",
+    "category": "Phishing Link",
+    "title": "Uji Deteksi Tautan Palsu Bank",
+    "description": "Pengguna menerima SMS klaim hadiah dengan tautan mencurigakan.",
+    "steps": [
+      {
+        "stepId": 1,
+        "type": "ACTION_PICKER", 
+        "prompt": "Anda menerima SMS: 'Bank Guardiola: Anda memenangkan 10jt. Klik bca-klaim.xyz'. Apa tindakan pertama Anda?",
+        "options": [
+          { "text": "Langsung klik tautan untuk cek hadiah", "isCorrect": false, "feedback": "Salah! Jangan pernah mengklik tautan dari SMS tidak dikenal." },
+          { "text": "Abaikan dan hapus pesan", "isCorrect": true, "feedback": "Benar! Itu adalah ciri utama phishing." }
+        ]
+      },
+      {
+        "stepId": 2,
+        "type": "MULTIPLE_CHOICE",
+        "prompt": "Bagian mana dari domain 'bca-klaim.xyz' yang menunjukkan indikasi penipuan?",
+        "options": [
+          "Penggunaan ekstensi domain .xyz gratisan",
+          "Nama bank dicantumkan di depan",
+          "Tidak ada yang salah"
+        ],
+        "correctAnswer": 0
+      }
+    ]
+  },
+  {
+    "id": "job-scam-01",
+    "category": "Job Scam",
+    "title": "Wawancara Kerja di Lokasi Misterius",
+    "description": "Mendapat tawaran kerja interview langsung di gudang kosong.",
+    "steps": [
+      {
+        "stepId": 1,
+        "type": "SHORT_ANSWER",
+        "prompt": "Perusahaan meminta Anda membayar uang muka Rp 300.000 untuk seragam sebelum interview. Analisis secara singkat: mengapa ini berbahaya?",
+        "expectedKeywords": ["palsu", "modus", "bayar", "penipuan"]
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.statCard {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  padding: 1.25rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: border-color var(--transition-speed);
+}
+
+.statCard:hover {
+  border-color: var(--accent-gold);
+}
+
+.statCard h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  margin-bottom: 0.25rem;
+}
+
+.statCard p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}

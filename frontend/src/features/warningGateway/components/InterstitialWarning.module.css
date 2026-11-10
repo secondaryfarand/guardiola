@@ -1,0 +1,236 @@
+.gatewayOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(7, 13, 29, 0.92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.gatewayCard {
+  background-color: var(--bg-card);
+  border: 2px solid var(--danger-red);
+  border-radius: 16px;
+  padding: 2.5rem;
+  max-width: 650px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(220, 38, 38, 0.25);
+  animation: slideDown 0.3s ease-out;
+}
+
+.warningHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--danger-red);
+  margin-bottom: 1rem;
+}
+
+.warningHeader i {
+  font-size: 2.2rem;
+}
+
+.warningHeader h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.warningSubtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.targetInfoBox {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.targetText {
+  color: var(--accent-gold);
+  word-break: break-all;
+  font-family: monospace;
+  font-size: 0.95rem;
+}
+
+.riskBadge {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: var(--danger-red);
+  color: white;
+  text-transform: uppercase;
+}
+
+.redFlagsSection {
+  margin-bottom: 2rem;
+}
+
+.redFlagsSection h4 {
+  margin: 0 0 0.75rem 0;
+  color: var(--text-main);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.redFlagsSection ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.redFlagsSection li {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.redFlagsSection li i {
+  color: var(--danger-red);
+}
+
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.safeBtn {
+  flex: 1;
+  background-color: var(--accent-green);
+  color: var(--text-main);
+  border: none;
+  padding: 0.85rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color var(--transition-speed);
+}
+
+.safeBtn:hover {
+  background-color: var(--accent-green-hover);
+}
+
+.dangerBtn {
+  flex: 1;
+  background-color: transparent;
+  border: 1px solid var(--danger-red);
+  color: var(--danger-red);
+  padding: 0.85rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all var(--transition-speed);
+}
+
+.dangerBtn:hover {
+  background-color: rgba(220, 38, 38, 0.1);
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+}
+
+.modalCard {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+}
+
+.modalCard :global(.modalIcon) {
+  font-size: 2.5rem;
+  color: var(--danger-red);
+  margin-bottom: 1rem;
+}
+
+.modalCard h3 {
+  margin: 0 0 0.75rem 0;
+  color: var(--text-main);
+}
+
+.modalCard p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.modalActions {
+  display: flex;
+  gap: 1rem;
+}
+
+.modalCancelBtn, .modalProceedBtn {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.modalCancelBtn {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+}
+
+.modalProceedBtn {
+  background-color: var(--danger-red);
+  color: white;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

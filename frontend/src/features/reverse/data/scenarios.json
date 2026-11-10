@@ -1,0 +1,152 @@
+[
+      {
+    "id": "social-engineering-chat",
+    "title": "Manipulasi Psikologis via Chat (Social Engineering)",
+    "category": "Impersonation",
+    "type": "CHAT_SIMULATION",
+    "description": "Simulasikan percakapan persuasif untuk menguji bagaimana penipu memanfaatkan urgensi dan kepanikan melalui aplikasi pesan.",
+    "targetName": "Bpk. Budi (Karyawan Bagian Keuangan)",
+    "initialMessage": "Halo, ini dengan Budi dari bagian keuangan. Ada yang bisa saya bantu terkait pesan Anda sebelumnya?",
+    "templates": [
+        "URGENT: Token m-banking perusahaan Anda terblokir sistem pusat jika tidak konfirmasi sekarang!",
+        "Halo Pak Budi, saya rekan direktur. Tolong transfer dana kilat ke rekening ini sekarang, sedang rapat darurat.",
+        "Selamat siang, paket dokumen rahasia perusahaan tertahan di ekspedisi, mohon segera transfer biaya administrasi."
+    ]
+  },
+  {
+    "id": "phishing-email",
+    "title": "Kampanye Phishing Email & Credential Harvester",
+    "category": "Phishing",
+    "description": "Simulasikan bagaimana peretas merancang jebakan email palsu dan halaman login tiruan untuk memanen kredensial pengguna.",
+    "steps": [
+      {
+        "id": "step_1",
+        "type": "MULTIPLE_CHOICE",
+        "question": "Anda sedang merancang kampanye simulasi phishing email untuk menguji kesadaran karyawan bank. Subjek email manakah yang memiliki tingkat keberhasilan (open rate) tertinggi karena memicu kepanikan psikologis?",
+        "options": [
+          {
+            "id": "opt_a",
+            "text": "Newsletter Bulanan: Tips Keamanan Data Perbankan Terbaru",
+            "isCorrect": false,
+            "feedback": "Kurang efektif. Subjek yang bersifat informatif dan formal jarang memicu tindakan impulsif korban.",
+            "points": 0
+          },
+          {
+            "id": "opt_b",
+            "text": "PENTING: Akun Anda Terdeteksi Aktivitas Login Mencurigakan dari Perangkat Asing",
+            "isCorrect": true,
+            "feedback": "Tepat! Penipu sering menggunakan taktik rasa takut (fear) dan urgensi mendesak agar korban segera mengeklik tautan tanpa berpikir panjang.",
+            "points": 1
+          },
+          {
+            "id": "opt_c",
+            "text": "Undangan Rapat Rutin Divisi IT Hari Jumat",
+            "isCorrect": false,
+            "feedback": "Kurang menarik perhatian umum karena terlihat seperti rutinitas biasa.",
+            "points": 0
+          }
+        ]
+      },
+      {
+        "id": "step_2",
+        "type": "ACTION_PICKER",
+        "question": "Dalam mendesain halaman web tiruan (phishing landing page), domain palsu mana yang paling cerdik digunakan untuk mengecoh mata korban yang kurang teliti?",
+        "options": [
+          {
+            "id": "act_a",
+            "text": "bca-login-gratis123.com",
+            "isCorrect": false,
+            "feedback": "Terlalu mencurigakan dan mudah dikenali sebagai situs abal-abal.",
+            "points": 0
+          },
+          {
+            "id": "act_b",
+            "text": "login-bca.co.id.hacker-server.net",
+            "isCorrect": false,
+            "feedback": "Domain utama di bagian paling belakang (hacker-server.net) terlalu jelas terlihat.",
+            "points": 0
+          },
+          {
+            "id": "act_c",
+            "text": "klikbca-secure-auth.com",
+            "isCorrect": true,
+            "feedback": "Cerdik! Penipu sering menyematkan kata-kata resmi seperti 'secure' atau 'auth' di depan nama brand terkenal untuk mengecoh visual domain.",
+            "points": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "social-engineering-chat",
+    "title": "Manipulasi Psikologis via Chat (Social Engineering)",
+    "category": "Impersonation",
+    "description": "Pelajari bagaimana sindikat penipuan memanfaatkan taktik tekanan sosial dan otoritas palsu melalui aplikasi pesan instan.",
+    "steps": [
+      {
+        "id": "soc_1",
+        "type": "MULTIPLE_CHOICE",
+        "question": "Anda berperan sebagai penipu yang menyamar sebagai Direktur Perusahaan. Pesan awal apa yang paling efektif dikirimkan ke target (bagian keuangan) agar mereka segera mentransfer dana tanpa konfirmasi panjang?",
+        "options": [
+          {
+            "id": "opt_1",
+            "text": "Halo, selamat pagi. Bisa minta tolong cek laporan keuangan bulan lalu?",
+            "isCorrect": false,
+            "feedback": "Terlalu santai dan tidak mendesak, target akan melakukan prosedur verifikasi normal.",
+            "points": 0
+          },
+          {
+            "id": "opt_2",
+            "text": "URGENT! Saya sedang rapat penting dengan klien dan butuh transfer dana kilat sekarang untuk proyek rahasia. Jangan hubungi saya lewat telepon!",
+            "isCorrect": true,
+            "feedback": "Tepat! Taktik 'CEO Fraud' ini memanfaatkan rasa segan kepada atasan sekaligus melarang korban melakukan verifikasi telepon agar penipuan tidak terbongkar.",
+            "points": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fake-job-portal",
+    "title": "Jebakan Lowongan Kerja Fiktif & Akomodasi Palsu",
+    "category": "JobScam",
+    "description": "Pahami bagaimana celah kerentanan pencari kerja dimanfaatkan melalui modus panggilan interview fiktif dan agen travel abal-abal.",
+    "steps": [
+      {
+        "id": "job_1",
+        "type": "MULTIPLE_CHOICE",
+        "question": "Dalam skenario rekrutmen palsu, alasan apa yang paling sering digunakan penipu untuk meminta uang muka (biaya akomodasi) kepada calon korban?",
+        "options": [
+          {
+            "id": "opt_x",
+            "text": "Biaya pembelian seragam kantor resmi perusahaan.",
+            "isCorrect": false,
+            "feedback": "Biasanya kurang mendesak dibanding biaya transportasi/akomodasi perjalanan luar kota.",
+            "points": 0
+          },
+          {
+            "id": "opt_y",
+            "text": "Pembayaran tiket pesawat dan hotel melalui 'travel partner resmi' yang harus ditalangi dulu lalu nanti diganti (reimburse).",
+            "isCorrect": true,
+            "feedback": "Tepat! Modus kerja sama agen travel fiktif adalah jebakan klasik yang paling sering menelan korban di kalangan pencari kerja fresh graduate.",
+            "points": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "social-engineering-chat",
+    "title": "Manipulasi Psikologis via Chat (Social Engineering)",
+    "category": "Impersonation",
+    "type": "CHAT_SIMULATION",
+    "description": "Simulasikan percakapan persuasif untuk menguji bagaimana penipu memanfaatkan urgensi dan kepanikan melalui aplikasi pesan.",
+    "targetName": "Bpk. Budi (Karyawan Bagian Keuangan)",
+    "initialMessage": "Halo, ini dengan Budi dari bagian keuangan. Ada yang bisa saya bantu terkait pesan Anda sebelumnya?",
+    "templates": [
+        "URGENT: Token m-banking perusahaan Anda terblokir sistem pusat jika tidak konfirmasi sekarang!",
+        "Halo Pak Budi, saya rekan direktur. Tolong transfer dana kilat ke rekening ini sekarang, sedang rapat darurat.",
+        "Selamat siang, paket dokumen rahasia perusahaan tertahan di ekspedisi, mohon segera transfer biaya administrasi."
+    ]
+  }
+]
