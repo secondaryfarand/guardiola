@@ -26,7 +26,3 @@ Guardiola adalah platform web berbasis MERN Stack (MongoDB, Express.js, React, N
 * **Database**: MongoDB & Mongoose.
 * **Deployment**: Vercel (Monorepo Architecture with multi-service routing).
 
----
-
-## 📂 Struktur Proyek (Monorepo)
-
