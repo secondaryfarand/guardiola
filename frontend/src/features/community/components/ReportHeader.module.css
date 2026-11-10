@@ -1,0 +1,41 @@
+.headerFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.headerFlex h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.3rem;
+}
+
+.headerFlex p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.reportBtn {
+  background: linear-gradient(135deg, var(--danger-red), #b91c1c);
+  color: var(--text-main);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all var(--transition-speed);
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+}
+
+.reportBtn:hover {
+  background: linear-gradient(135deg, #b91c1c, #991b1b);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(220, 38, 38, 0.4);
+}

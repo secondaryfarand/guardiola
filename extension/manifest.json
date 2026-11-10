@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Guardiola",
+  "version": "1.0.0",
+  "description": "Proteksi otomatis navigasi web terhadap ancaman phising dan scam.",
+  "permissions": [
+    "activeTab",
+    "webNavigation",
+    "tabs",
+    "storage",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://localhost:5000/*",
+    "http://localhost:5173/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

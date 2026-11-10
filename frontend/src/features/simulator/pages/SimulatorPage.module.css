@@ -1,0 +1,94 @@
+.simulatorContainer {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: var(--text-main);
+  font-family: var(--font-family);
+}
+
+.simulatorHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.simulatorHeader h2 {
+  font-size: 1.75rem;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.simulatorHeader p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.simulatorCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.progressInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.feedbackBanner {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: var(--bg-surface);
+  border-left: 4px solid var(--accent-gold);
+  border-radius: 8px;
+  color: var(--text-main);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.resultCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.resultCard h3 {
+  font-size: 1.5rem;
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+}
+
+.scoreBox {
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  background-color: var(--bg-surface);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.restartBtn {
+  background-color: var(--accent-green);
+  color: var(--text-main);
+  border: 1px solid var(--accent-gold);
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+.restartBtn:hover {
+  background-color: var(--accent-green-hover);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

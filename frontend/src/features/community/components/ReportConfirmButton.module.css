@@ -1,0 +1,28 @@
+.confirmBtn {
+  background: rgba(12, 96, 56, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(74, 222, 128, 0.3);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all var(--transition-speed);
+  font-family: var(--font-family);
+}
+
+.confirmBtn:hover {
+  background: rgba(12, 96, 56, 0.3);
+  border-color: #4ade80;
+}
+
+.confirmBtn.confirmed {
+  background-color: var(--accent-green);
+  color: var(--text-main);
+  border-color: var(--accent-green);
+  cursor: default;
+  opacity: 0.9;
+}
