@@ -12,16 +12,7 @@ connectDB();
 const app = express();
 
 app.use(helmet());
-// app.use(
-//   helmet({
-//     contentSecurityPolicy: {
-//       directives: {
-//         "default-src": ["'self'"],
-//         "script-src": ["'self'", "trusted-cdn.com"],
-//       },
-//     },
-//   })
-// );
+
 
 
 app.use(cors());
