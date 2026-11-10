@@ -22,7 +22,7 @@ const CommunityReports = () => {
 
   // --- BASE URL API DINAMIS (Support Local & Vercel Production) ---
   // Jika VITE_API_URL diset di environment Vercel, gunakan itu. Jika tidak, fallback ke localhost.
-  const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+  // const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
   const triggerToast = (msg) => {
     setToastMessage(msg);
@@ -34,7 +34,7 @@ const CommunityReports = () => {
   // --- 1. AMBIL DATA DARI BACKEND (MENGGUNAKAN API DINAMIS) ---
   const fetchReports = async () => {
     try {
-      const response = await fetch(`${API_BASE_URL}/api/v1/community`);
+      const response = await fetch(`/api/v1/community`);
       const result = await response.json();
       
       if (result.success) {
@@ -72,7 +72,7 @@ const CommunityReports = () => {
   };
   const handleConfirmThreat = async (reportId) => {
     try {
-      const response = await fetch(`${API_BASE_URL}/api/v1/community/${reportId}/confirm`, {
+      const response = await fetch(`/api/v1/community/${reportId}/confirm`, {
         method: 'PATCH',
       });
       const result = await response.json();
